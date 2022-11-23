@@ -22,4 +22,7 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  return res.send("redirect to /graphql to get to graphql server");
+});
 app.listen(port, console.log(`Server running on port ${port}`));
